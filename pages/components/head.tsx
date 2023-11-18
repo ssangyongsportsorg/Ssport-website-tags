@@ -28,6 +28,8 @@ export default function Header() {
     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
     </span>
   </Link>
+         <div className="flex md:order-2">
+        <div className="items-center hidden mr-3 lg:flex">
   <div className="flex md:order-2">
       <DocSearch
               apiKey="c2e792c2e75fe1dd3e40574f8b4c9a80"
@@ -40,6 +42,8 @@ export default function Header() {
     
     <Navbar.Toggle />
   </div>
+            </div>
+             </div>
   <Navbar.Collapse>
     <a
       href="https://slb.ssangyongsports.org"
