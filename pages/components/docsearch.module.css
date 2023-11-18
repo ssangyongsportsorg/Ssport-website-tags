@@ -9,6 +9,6 @@
     width: 60%; /* 您可以根據需要調整寬度 */
   }
 .docSearch button {
-  margin: 40%;
-  width: 40%;
+  margin: 0;
+  width: 50%;
 }
