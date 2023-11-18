@@ -12,9 +12,8 @@ export default function RootDocsLayout({ children }: { children: ReactNode }) {
     nav={{
       component: (
         <Nav
-          enableSidebar={pathname.startsWith('/docs/') || pathname === '/docs'}
           title={<>雙龍體育幫助中心</>}
-          collapsibleSidebar={false}
+          collapsibleSidebar={true}
           items={[{ href: "/support", children: "返回幫助中心" }]}
         />
       ),
