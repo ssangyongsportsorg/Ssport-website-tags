@@ -6,7 +6,6 @@ import { signIn, signOut, useSession } from "next-auth/react"
 import { Session } from "next-auth"
 import { DocSearch } from '@docsearch/react'
 import '@docsearch/css';
-import a from './docsearch.module.css';
 export default function Header() {
   return (
     <>
@@ -30,13 +29,12 @@ export default function Header() {
     </span>
   </Link>
   <div className="flex md:order-2">
-   <div className={a.head}>
       <DocSearch
               apiKey="c2e792c2e75fe1dd3e40574f8b4c9a80"
               appId="70GEOCJCSX"
               indexName="help"
             />
-        </div>
+        
     <Login />
         
     
