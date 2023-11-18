@@ -34,7 +34,7 @@ export default function Header() {
               appId="70GEOCJCSX"
               indexName="help"
             />
-          <div className="mr-1">
+          <div className="mr-4">
 
     <Login />
          </div>
