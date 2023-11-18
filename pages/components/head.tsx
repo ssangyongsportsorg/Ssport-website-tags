@@ -25,9 +25,10 @@ export default function Header() {
     
         
     
-    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-    </span>
+    <div className="lg:self-center flex items-center mb-4 lg:mb-0 collapse collapsed">
+    </div>
   </Link>
+
          <div className="flex md:order-2">
         <div className="items-center hidden mr-3 lg:flex">
   <div className="flex md:order-2">
