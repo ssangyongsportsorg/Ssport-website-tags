@@ -13,7 +13,7 @@ export default function RootDocsLayout({ children }: { children: ReactNode }) {
       component: (
         <Nav
           title={<>雙龍體育幫助中心</>}
-          enableSidebar={false}
+          enableSidebar={true}
           items={[{ href: "/support", children: "返回幫助中心" }]}
         />
       ),
