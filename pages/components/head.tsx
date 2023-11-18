@@ -29,17 +29,19 @@ export default function Header() {
     </span>
   </Link>
   <div className="flex md:order-2">
+      <div>
+
       <DocSearch
               apiKey="c2e792c2e75fe1dd3e40574f8b4c9a80"
               appId="70GEOCJCSX"
               indexName="help"
             />
-          <div className="mr-4">
+          </div>
+  <div>
 
-    <Login />
-         </div>
- 
-    
+    <Login /> 
+      </div>
+
     <Navbar.Toggle />
   </div>
   <Navbar.Collapse>
