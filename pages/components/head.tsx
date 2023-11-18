@@ -34,12 +34,11 @@ export default function Header() {
               appId="70GEOCJCSX"
               indexName="help"
             />
-      </div>
-
-          <div className="mr-4">
+          <div className="mr-1">
 
     <Login />
-        
+         </div>
+ 
     
     <Navbar.Toggle />
   </div>
