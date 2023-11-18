@@ -24,12 +24,11 @@ export default function Header() {
     />
     
         
-    
     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
     </span>
   </Link>
-  <div className="flex md:order-2">
-      <div>
+      <div className="flex items-center lg:order-2">
+      <div className="px-4 lg:px-5 py-2 lg:py-2.5 mr-2">
 
       <DocSearch
               apiKey="c2e792c2e75fe1dd3e40574f8b4c9a80"
@@ -37,7 +36,7 @@ export default function Header() {
               indexName="help"
             />
           </div>
-  <div>
+      <div className="px-4 lg:px-5 py-2 lg:py-2.5 mr-2">
 
     <Login /> 
       </div>
