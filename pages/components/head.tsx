@@ -28,18 +28,13 @@ export default function Header() {
     </span>
   </Link>
       <div className="flex items-center lg:order-2">
-      <div className="px-4 lg:px-5 py-2 lg:py-2.5 mr-2">
-
       <DocSearch
               apiKey="c2e792c2e75fe1dd3e40574f8b4c9a80"
               appId="70GEOCJCSX"
               indexName="help"
             />
-          </div>
-      <div className="px-4 lg:px-5 py-2 lg:py-2.5 mr-2">
 
     <Login /> 
-      </div>
 
     <Navbar.Toggle />
   </div>
