@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import type { ReactNode } from 'react'
 import 'next-docs-ui/style.css'
 
+import Footer from '@/app/components/footer'
 const inter = Inter({
   subsets: ['latin']
 })
@@ -13,6 +14,8 @@ export default function Layout({ children }: { children: ReactNode }) {
       <body>
         <RootProvider>{children}</RootProvider>
       </body>
+      <Footer />
     </html>
+    
   )
 }
