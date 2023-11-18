@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import type { ReactNode } from 'react'
 import 'next-docs-ui/style.css'
 
-import Footer from '@/app/components/footer'
+import Footer from '@/pages/components/footer'
 const inter = Inter({
   subsets: ['latin']
 })
