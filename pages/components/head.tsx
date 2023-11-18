@@ -14,7 +14,7 @@ export default function Header() {
   <Navbar
   fluid={true}
   rounded={true}
-    className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+    className="w-full px-3 py-3 mx-auto lg:flex lg:justify-between max-w-8xl lg:px-3"
 >
     <Link href="/">
     <img
@@ -25,12 +25,9 @@ export default function Header() {
     
         
     
-    <div className="lg:self-center flex items-center mb-4 lg:mb-0 collapse collapsed">
-    </div>
+    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+    </span>
   </Link>
-
-         <div className="flex md:order-2">
-        <div className="items-center hidden mr-3 lg:flex">
   <div className="flex md:order-2">
       <DocSearch
               apiKey="c2e792c2e75fe1dd3e40574f8b4c9a80"
@@ -43,8 +40,6 @@ export default function Header() {
     
     <Navbar.Toggle />
   </div>
-            </div>
-             </div>
   <Navbar.Collapse>
     <a
       href="https://slb.ssangyongsports.org"
