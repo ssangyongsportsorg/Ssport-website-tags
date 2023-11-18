@@ -20,6 +20,13 @@ export default function Header() {
       className="mr-3 h-6 sm:h-9"
       alt="ssport Logo"
     />
+      <div className="flex items-center gap-1">
+        <DocSearch
+              apiKey="c2e792c2e75fe1dd3e40574f8b4c9a80"
+              appId="70GEOCJCSX"
+              indexName="help"
+            />
+      </div>
     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
     </span>
   </Link>
