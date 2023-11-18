@@ -5,7 +5,7 @@ import 'next-docs-ui/style.css'
 export default function RootDocsLayout({ children }: { children: ReactNode }) {
   return (
     <div>
-          <DocsLayout tree={tree} nav={{ title: 'My App' }}>
+          <DocsLayout tree={tree} nav={{ title: '雙龍體育幫助中心' }}>
       {children}
     </DocsLayout>
     </div>
