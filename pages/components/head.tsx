@@ -27,16 +27,16 @@ export default function Header() {
         
     
     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-      <div className={a.head}>
+    </span>
+  </Link>
+  <div className="flex md:order-2">
+   <div className={a.head}>
       <DocSearch
               apiKey="c2e792c2e75fe1dd3e40574f8b4c9a80"
               appId="70GEOCJCSX"
               indexName="help"
             />
         </div>
-    </span>
-  </Link>
-  <div className="flex md:order-2">
     <Login />
         
     
