@@ -36,7 +36,7 @@ export default function Header() {
             />
       </div>
 
-          <div className="flex md:order-3 ml-2">
+          <div className="flex md:order-3">
 
     <Login />
         
