@@ -4,6 +4,8 @@ import type { ReactNode } from 'react'
 import 'next-docs-ui/style.css'
 import '@/styles/globals.css'
 import '@docsearch/css';
+import dynamic from 'next/dynamic'
+
 
 import Footer from '@/pages/components/footer'
 
