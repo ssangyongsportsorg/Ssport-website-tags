@@ -20,7 +20,7 @@ export default function Layout({ children }: { children: ReactNode }) {
   search={{
     SearchDialog
   }}
->        >{children}</RootProvider>
+>        {children}</RootProvider>
       </body>
       <Footer />
     </html>
