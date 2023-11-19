@@ -13,13 +13,8 @@ sidebar={{
   collapsible: false
 }}
     nav={{
-      component: (
-        <Nav
-          title={<>雙龍體育幫助中心</>}
-          url="/support"
-          items={[{ href: "/", children: "返回官網" }]}
-        />
-      ),
+        enabled: false
+      
     }}
   >
     {children}
