@@ -6,10 +6,19 @@ import { SessionProvider } from 'next-auth/react'
 import Script from 'next/script';
 
 export default function App({
-  
-  Component, 
+  Component,
   pageProps: { session, ...pageProps },
 }: AppProps) {
+  // 检查是否是 RestrictedPage，如果是，则不使用 app.tsx
+  if (Component.name === 'support') {
+    return (
+      <div>
+        <div className="bg-gradient h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
+        <Component {...pageProps} />
+      </div>
+    );
+  }
+
   
   return (
     <div>
