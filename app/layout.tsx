@@ -10,7 +10,7 @@ import Footer from '@/pages/components/footer'
 const inter = Inter({
   subsets: ['latin']
 })
-const SearchDialog = dynamic(() => import('@/components/search'))
+const SearchDialog = dynamic(() => import('@/app/components/search'))
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
