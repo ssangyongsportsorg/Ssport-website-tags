@@ -18,25 +18,7 @@ export default async function Page({
   if (page == null) {
     notFound()
   }
- function Category({ page, tab }: { page: typeof Page; tab: Utils }) {
-  const filtered = tab.pages.filter(
-    docs =>
-      docs.file.dirname === page.file.dirname && docs.file.name !== 'index'
-  )
 
-  return (
-    <Cards>
-      {filtered.map(page => (
-        <Card
-          key={page.file.id}
-          title={page.matter.title}
-          description={page.matter.description ?? 'No Description'}
-          href={tab.getPageUrl(page.slugs)}
-        />
-      ))}
-    </Cards>
-  )
-}
   const toc = await getTableOfContents(page.body.raw)
   const neighbour = findNeighbour(tree, getPageUrl(params.slug))
  
