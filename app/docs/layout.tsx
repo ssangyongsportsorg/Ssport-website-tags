@@ -13,6 +13,7 @@ sidebar={{
   collapsible: false
 }}
     nav={{
+    enabled: false
       component: (
         <Nav
           enabled={false}
