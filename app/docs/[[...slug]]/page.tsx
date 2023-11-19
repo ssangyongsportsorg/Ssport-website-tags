@@ -6,7 +6,8 @@ import { DocsPage } from 'next-docs-ui/page'
 import { findNeighbour, getTableOfContents } from 'next-docs-zeta/server'
 import { notFound } from 'next/navigation'
 import { Content } from './content'
- 
+ import { Card, Cards } from 'next-docs-ui/mdx'
+
 export default async function Page({
   params
 }: {
