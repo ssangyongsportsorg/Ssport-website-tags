@@ -6,7 +6,7 @@ import { signIn, signOut, useSession } from "next-auth/react"
 import { Session } from "next-auth"
 import { DocSearch } from '@docsearch/react'
 import '@docsearch/css';
-export default function Header() {
+export default function helphead() {
   return (
     <>
     <header>
