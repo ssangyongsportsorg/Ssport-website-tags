@@ -5,7 +5,6 @@ import { DocSearch } from '@docsearch/react'
 import '@docsearch/css';
 export default function Header() {
   return (
-    <>
     <header>
     
   <Navbar
@@ -49,9 +48,5 @@ export default function Header() {
 </Navbar>
       
       </header>
-       <br /> 
-    <br /> 
-    </>
-
   )
 }
