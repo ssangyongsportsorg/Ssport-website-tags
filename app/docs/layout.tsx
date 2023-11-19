@@ -10,7 +10,7 @@ export default function RootDocsLayout({ children }: { children: ReactNode }) {
     
     tree={tree}
 sidebar={{
-  enabled: false
+  collapsible: false
 }}
     nav={{
       component: (
