@@ -1,4 +1,5 @@
 'use client'
+import '@docsearch/css';
 
 import { DocsLayout } from 'next-docs-ui/layout'
 import type { ReactNode } from 'react'
