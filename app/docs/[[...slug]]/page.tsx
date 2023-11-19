@@ -18,7 +18,7 @@ export default async function Page({
   if (page == null) {
     notFound()
   }
- function Category({ page, tab }: { page: Page; tab: Utils }) {
+ function Category({ page, tab }: { page: typeof Page; tab: Utils }) {
   const filtered = tab.pages.filter(
     docs =>
       docs.file.dirname === page.file.dirname && docs.file.name !== 'index'
