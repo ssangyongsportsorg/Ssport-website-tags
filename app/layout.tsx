@@ -4,7 +4,7 @@ import type { ReactNode } from 'react'
 import 'next-docs-ui/style.css'
 import '@/styles/globals.css'
 import Footer from '@/pages/components/footer'
-import Helpheader from '@/pages/components/helpheader'
+import Helpheader from '@/app/components/helpheader'
 
 const inter = Inter({
   subsets: ['latin']
