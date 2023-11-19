@@ -14,14 +14,6 @@ sidebar={{
 }}
     nav={{
     enabled: false
-      component: (
-        <Nav
-          enabled={false}
-          title={<>雙龍體育幫助中心</>}
-          url="/support"
-          items={[{ href: "/", children: "返回官網" }]}
-        />
-      ),
     }}
   >
     {children}
