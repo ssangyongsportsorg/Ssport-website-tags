@@ -10,13 +10,17 @@ import Footer from '@/pages/components/footer'
 const inter = Inter({
   subsets: ['latin']
 })
+const SearchDialog = dynamic(() => import('@/components/search'))
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="zh-tw" className={inter.className}>
       <body>
-        <RootProvider/>
-        >{children}</RootProvider>
+<RootProvider
+  search={{
+    SearchDialog
+  }}
+>        >{children}</RootProvider>
       </body>
       <Footer />
     </html>
