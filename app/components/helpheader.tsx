@@ -4,9 +4,7 @@ import Link from 'next/link';
 import { DocSearch } from '@docsearch/react'
 import '@docsearch/css';
 export default function Header() {
-  return (
-    <header>
-    
+  return (    
   <Navbar
   fluid={true}
   rounded={true}
@@ -46,7 +44,5 @@ export default function Header() {
   </Navbar.Collapse>
  
 </Navbar>
-      
-      </header>
-  )
+        )
 }
