@@ -2,7 +2,8 @@
  
 import { useMDXComponent } from 'next-contentlayer/hooks'
 import defaultComponents from 'next-docs-ui/mdx'
- 
+  import { Card, Cards } from 'next-docs-ui/mdx'
+
 const components = {
   ...defaultComponents
 }
