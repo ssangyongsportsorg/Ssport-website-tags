@@ -8,6 +8,7 @@ export default function supporthero() {
 const { data: session, status } = useSession();
 if (session) {
 return (
+  <>
 <section
   className="bg-gradient-to-br from-indigo-50 via-white to-cyan-100"
 >
@@ -24,5 +25,6 @@ return (
           </div>    
   </div>
 </section>
+    </>
 )
 }
