@@ -1,3 +1,5 @@
+'use client';
+import { useSession } from "next-auth/react"
 import styles from './Button.module.css';
 import { DocSearch } from '@docsearch/react'
 import a from './docsearch.module.css';
