@@ -5,7 +5,7 @@ import { DocSearch } from '@docsearch/react'
 import a from './docsearch.module.css';
 import '@docsearch/css';
 
-export default function SupportHero() {
+export default function supporthero() {
   const { data: session, status } = useSession();
   if (session) {
     return (
