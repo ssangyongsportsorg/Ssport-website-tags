@@ -1,11 +1,12 @@
 'use client';
+import React from 'react';
 import { useSession } from "next-auth/react"
 import styles from './Button.module.css';
 import { DocSearch } from '@docsearch/react'
 import a from './docsearch.module.css';
 import '@docsearch/css';
 
-export default function supporthero() {
+export default function Supporthero() {
   const { data: session, status } = useSession();
   if (session) {
     return (
