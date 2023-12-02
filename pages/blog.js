@@ -10,17 +10,29 @@ import styles from './components/Button.module.css';
 export default function Blog({posts}){
     return <main>
         <div>
-        <section className="bg-white dark:bg-gray-900">
+        <section>
   <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
     <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-      <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-        Our Blog
+      <h2 className={`mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white `}>
+        雙龍體育
+            <span className={styles.c}>部落格</span>
       </h2>
       <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-        We use an agile approach to test assumptions and connect with the needs
-        of your audience early and often.
+   任何關於雙龍體育的任何關於雙龍體育的消息和公告
       </p>
+      <Head>
+        <title>雙龍體育blog</title>
+        <meta name="description" content="任何關於雙龍體育的任何關於雙龍體育的消息和公告,就上雙龍體育blog" />
+      </Head>
     </div>
+  </div>
+</section>
+        </div>
+        <div>
+        <section className="bg-white dark:bg-gray-900">
+    <h2 className="text-4xl font-bold max-sm:text-center sm:ml-5">
+          新文章
+        </h2>
     <div className="grid gap-8 lg:grid-cols-2">
       <article className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
         <div className="flex justify-between items-center mb-5 text-gray-500">
@@ -135,23 +147,7 @@ export default function Blog({posts}){
   </div>
 </section>
                     </div>
-        <section>
-  <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-    <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-      <h2 className={`mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white `}>
-        雙龍體育
-            <span className={styles.c}>部落格</span>
-      </h2>
-      <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-   任何關於雙龍體育的任何關於雙龍體育的消息和公告
-      </p>
-      <Head>
-        <title>雙龍體育blog</title>
-        <meta name="description" content="任何關於雙龍體育的任何關於雙龍體育的消息和公告,就上雙龍體育blog" />
-      </Head>
-    </div>
-  </div>
-</section>
+        
   
 
         {posts.map(post => {
