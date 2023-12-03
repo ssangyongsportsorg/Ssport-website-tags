@@ -9,10 +9,10 @@ export default function RootDocsLayout({ children }: { children: ReactNode }) {
   <DocsLayout
     
     tree={tree}
-sidebar={{
-  enableSidebar: false
+  
 }}
     nav={{
+  enableSidebar: false
       component: (
         <Nav
           title={<>雙龍體育幫助中心</>}
