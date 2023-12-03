@@ -12,7 +12,7 @@ export default function RootDocsLayout({ children }: { children: ReactNode }) {
   
 }}
     nav={{
-  enableSidebar: false
+
       component: (
         <Nav
           title={<>雙龍體育幫助中心</>}
