@@ -1,9 +1,9 @@
 'use client'
+import { useSelectedLayoutSegment } from 'next/navigation'
 import { Navbar } from "flowbite-react";
 import Login from "./login";
 import React from 'react';
 import Link from 'next/link';
-import { useSelectedLayoutSegment } from "next/navigation";
 import { signIn, signOut, useSession } from "next-auth/react"
 import { Session } from "next-auth"
 import { DocSearch } from '@docsearch/react'
