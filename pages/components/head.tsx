@@ -1,5 +1,6 @@
 'use client'
-import { useParams, useSelectedLayoutSegment } from "next/navigation";
+import { useParams } from 'next/navigation'
+import { useSelectedLayoutSegment } from "next/navigation";
 import { Navbar } from "flowbite-react";
 import Login from "./login";
 import React from 'react';
