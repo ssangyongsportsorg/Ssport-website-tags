@@ -2,13 +2,14 @@ import { Navbar } from "flowbite-react";
 import Login from "./login";
 import React from 'react';
 import Link from 'next/link';
+import { useSelectedLayoutSegment } from "next/navigation";
 import { signIn, signOut, useSession } from "next-auth/react"
 import { Session } from "next-auth"
 import { DocSearch } from '@docsearch/react'
 import '@docsearch/css';
 export default function Header() {
-    const helpCenter = selectedLayout === "support";
-
+ const selectedLayout = useSelectedLayoutSegment();
+  const helpCenter = selectedLayout === "support";
   return (
     <>
     <header>
@@ -24,19 +25,17 @@ export default function Header() {
       className="mr-3 h-6 sm:h-9"
       alt="ssport Logo"
     />
-     {helpCenter && (
-              <div className="flex items-center">
-                <div className="mr-3 h-5 border-l-2 border-gray-400" />
-                <Link
-                  href="/support"
-                  className="font-display text-lg font-bold text-gray-700"
-                >
-                  幫助中心
-                </Link>
-              </div>
-            )}
-          </div>
-
+  {helpCenter && (
+  <div className="flex items-center">
+    <div className="mr-3 h-5 border-l-2 border-gray-400" />
+    <Link
+      href="/support"
+      className="font-display text-lg font-bold text-gray-700"
+    >
+      幫助中心
+    </Link>
+  </div>
+)}
         
     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
     </span>
