@@ -1,5 +1,5 @@
 'use client'
-import { useSelectedLayoutSegment } from 'next/navigation'
+import { useParams, useSelectedLayoutSegment } from "next/navigation";
 import { Navbar } from "flowbite-react";
 import Login from "./login";
 import React from 'react';
@@ -9,6 +9,7 @@ import { Session } from "next-auth"
 import { DocSearch } from '@docsearch/react'
 import '@docsearch/css';
 export default function Header() {
+  const { domain = "ssangyongsports.eu.org" } = useParams() as { domain: string };
  const selectedLayout = useSelectedLayoutSegment();
   const helpCenter = selectedLayout === "support";
   return (
