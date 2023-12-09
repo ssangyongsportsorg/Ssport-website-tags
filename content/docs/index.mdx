@@ -2,7 +2,7 @@
 title: 需要大家的幫忙
 description: Your first document
 ---
-
+import { Card, Cards } from 'next-docs-ui/mdx'
 import { Alert } from 'flowbite-react';
 export default () => {
   return (
@@ -11,7 +11,13 @@ export default () => {
     <Alert color="failure" >
       <span className="font-medium">測試</span> 測試
     </Alert>
-  
+  <Cards>
+  <Card
+    href="/"
+    title="Home"
+    description="Go back to home"
+  />
+</Cards>
    </>
   )
 }
